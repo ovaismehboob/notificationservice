@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: notificationservice 
-          image: ovmehboooasregistry.azurecr.io/notificationservice
+          image: ovmehboobacr.azurecr.io/notificationservice
           ports:
           - containerPort: 3005
