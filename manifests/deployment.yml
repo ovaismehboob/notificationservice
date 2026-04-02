@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: notificationservice 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notificationservice
+  template:
+    metadata:
+      labels:
+        app: notificationservice 
+    spec:
+      containers:
+        - name: notificationservice 
+          image: cribfr6ordyckcqs.azurecr.io/notificationservice
+          ports:
+          - containerPort: 3005
